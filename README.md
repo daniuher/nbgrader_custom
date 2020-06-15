@@ -2,5 +2,5 @@
 
 Automatic grading of Jupyter Notebook assignments for CMVS.
 
-Based on the nbgrader by scipy:
+Based on the nbgrader from:
 https://github.com/jupyter/nbgrader
