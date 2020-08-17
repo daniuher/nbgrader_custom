@@ -10,9 +10,9 @@ import pandas as pd
 from nbgrader.api import Gradebook
 import numpy as np
 
-# grade_file_name = input('The grade file .csv from moodle name: ')
+grade_file_name = input('The grade file .csv from moodle name: ')
 
-df = pd.read_csv('moodle_grades.csv')
+df = pd.read_csv(grade_file_name)
 
 c = df.columns
 assignment_row = c[6]
@@ -39,4 +39,4 @@ with Gradebook('sqlite:///gradebook.db') as gb:
         
     gb.close()
     
-df.to_csv ('updated_grades.csv', index = False, header=True)        
+df.to_csv (grade_file_name, index = False, header=True)        
