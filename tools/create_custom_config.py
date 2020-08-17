@@ -6,7 +6,9 @@ Created on Mon Aug 17 05:21:58 2020
 """
 
 
-config_raw = """c = get_config()
+config_raw = """# THIS IS A MACHINE VISION CONFIG FILE
+
+c = get_config()
 
 #------------------------------------------------------------------------------
 # AssignLatePenalties(NbGraderPreprocessor) configuration
@@ -36,5 +38,5 @@ c.ClearSolutions.end_solution_delimeter = '# ----------- YOUR CODE ENDS HERE ---
 
 """
 
-with open("nbgrader_config_new.py", "w") as config_file:
+with open("nbgrader_config.py", "w") as config_file:
     config_file.write(config_raw)
