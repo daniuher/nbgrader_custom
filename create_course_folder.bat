@@ -12,6 +12,5 @@ xcopy /S "%cd%\assignments" "%cd%\%course_name%\source"
 python "%cd%\tools\create_custom_config.py"
 del "%cd%\%course_name%\nbgrader_config.py"
 move "%cd%\nbgrader_config.py" "%cd%\%course_name%"
-xcopy /S "%cd%\tools\late.py" "%cd%\%course_name%"
 xcopy /S "%cd%\tools" "%cd%\%course_name%"
 pause
