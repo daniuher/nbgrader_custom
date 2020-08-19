@@ -8,7 +8,6 @@ Created on Fri Aug 14 13:12:21 2020
 
 import pandas as pd
 from nbgrader.api import Gradebook
-import numpy as np
 
 grade_file_name = input('The grade file .csv from moodle name: ')
 
