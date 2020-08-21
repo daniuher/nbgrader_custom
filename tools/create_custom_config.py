@@ -36,6 +36,17 @@ c.ClearSolutions.code_stub = {'python': '# ---------- YOUR CODE STARTS HERE ----
 ## The delimiter marking the end of a solution
 c.ClearSolutions.end_solution_delimeter = '# ----------- YOUR CODE ENDS HERE ------------'
 
+#------------------------------------------------------------------------------
+# ClearHiddenTests(NbGraderPreprocessor) configuration
+#------------------------------------------------------------------------------
+
+## The delimiter marking the beginning of hidden tests cases
+#c.ClearHiddenTests.begin_test_delimeter = 'BEGIN HIDDEN TESTS'
+
+## The delimiter marking the end of hidden tests cases
+#c.ClearHiddenTests.end_test_delimeter = 'END HIDDEN TESTS'
+
+
 """
 
 with open("nbgrader_config.py", "w") as config_file:
