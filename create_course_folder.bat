@@ -1,7 +1,5 @@
 @echo off
-set p=C:\Anaconda3
-call %p%\Scripts\activate.bat %p%
-call conda activate cmvs
+call conda activate nbgrader_env
 set /p course_name="Enter course name: "
 nbgrader quickstart %course_name%
 mkdir "%cd%\%course_name%\submitted"
