@@ -2,6 +2,7 @@
 call conda activate nbgrader_env
 call conda install gitpython
 call pip install tabulate
+call pip install pandas
 call conda install jupyter
 call conda install -c conda-forge nbgrader
 call jupyter nbextension install --sys-prefix --py nbgrader --overwrite
