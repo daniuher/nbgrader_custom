@@ -8,9 +8,10 @@ Created on Sun Aug 23 18:21:05 2020
 
 import git
 
-q = input('would you like to pull the assignments from the git repository? [Y/N]')
-if q == 'Y':
+q = input('would you like to pull the assignments from the git repository? [y/n]')
+if q == 'y':
     course_branch = input('Course ID: ')
+    print('Downloading from repository...')
     my_repo = git.Repo.clone_from('https://github.com/daniuher/course_assignments.git', 'assignments')
     
     try:

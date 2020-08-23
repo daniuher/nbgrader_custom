@@ -12,16 +12,40 @@ import zipfile
 import os
 import shutil
 from datetime import datetime
+import nbformat
+import re
+from distutils.dir_util import copy_tree
+
+
+def getStudentNumberFromNotebook(ntbpath):
+    nb = nbformat.read(ntbpath, as_version = 4)
+    stuff = nb.cells[0].source
+    for line in stuff.splitlines():
+        if 'Student ID:' in line:
+            student_number = re.sub("[^0-9]", "", line)
+            return student_number
+
 
 # filename = input('file: ')
 filename = input('Name of the zip file: ')
+misses = 0
 
 filepath = os.getcwd()+'\\submitted'
+
+
 fileitself =  filepath+'\\'+filename
 if not os.path.isdir(filepath+'\\extracted'):
     os.mkdir(filepath+'\\extracted')
 
 assignment_name = filename.split('-')[1]+'-'+filename.split('-')[2]
+
+released_path = os.getcwd()+'\\release'
+released_assignment_path = released_path+'\\'+assignment_name
+files = os.listdir(released_assignment_path)
+correct_name = [ x for x in files if ".ipynb" in x ]
+files = [ x for x in files if ".ipynb" not in x ]
+
+
 
 timestamps = list()
 with zipfile.ZipFile(fileitself, 'r') as zip_ref:
@@ -37,11 +61,18 @@ submissions = os.listdir(extractedpath)
 for submission in submissions:
     
     temp_path = extractedpath+'\\'+submission # path to the extracted submission weird-name folder
-    temp_filezip = os.listdir(temp_path)[0] # submitted_file.zip
-    temp_file = temp_filezip.split('.')[0] # submitted_file 
+    temp_file_ipynb = os.listdir(temp_path)[0] # submitted_file.ipynb
+    temp_file = temp_file_ipynb.split('.')[0] # submitted_file 
     assignment_number = temp_file.split('_')[1] 
-    student_number = temp_file.split('_')[2]
-     
+    try:
+        student_number = temp_file.split('_')[2]
+    except:
+        # no student number provided
+        student_number = getStudentNumberFromNotebook(temp_path+'\\'+temp_file_ipynb)
+                
+    if not student_number:
+        misses += 1
+        student_number = 'no_student_ID_'+str(misses)
     
     if not os.path.isdir(filepath+'\\'+student_number):
         os.mkdir(filepath+'\\'+student_number)
@@ -52,21 +83,27 @@ for submission in submissions:
         
     # timestamp   
     
-    # timestamp = os.path.getmtime(temp_path+'\\'+temp_filezip)
+    # timestamp = os.path.getmtime(temp_path+'\\'+temp_file_ipynb)
     # timestamp = datetime.fromtimestamp(timestamp)
     timestamp = timestamps.pop(0)
     timestamp = datetime(*timestamp[0:])
     text_file = open(student_path+'\\'+assignment_name+'\\'+"timestamp.txt", "w")
     text_file.write(str(timestamp))
     text_file.close()
-        
-    
-    with zipfile.ZipFile(temp_path+'\\'+temp_filezip, 'r') as zip_ref:
-        zip_ref.extractall(student_path+'\\'+assignment_name)
     
     
+    # Copying the supporting files
+    copy_tree(released_assignment_path, student_path+'\\'+assignment_name)
+    os.rename(temp_path+'\\'+temp_file_ipynb, temp_path+'\\'+correct_name[0])
+    shutil.move(temp_path+'\\'+correct_name[0], student_path+'\\'+assignment_name+'\\'+correct_name[0])
     
-    os.remove(temp_path+'\\'+temp_filezip)
+    
+    # with zipfile.ZipFile(temp_path+'\\'+temp_file_ipynb, 'r') as zip_ref:
+    #     zip_ref.extractall(student_path+'\\'+assignment_name)
+    
+    
+    
+    # os.remove(temp_path+'\\'+temp_file_ipynb)
     shutil.rmtree(temp_path)
     
 os.rmdir(extractedpath)    
