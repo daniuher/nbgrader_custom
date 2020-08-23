@@ -12,4 +12,7 @@ call jupyter nbextension install --sys-prefix --py nbgrader --overwrite
 call jupyter nbextension enable --sys-prefix --py nbgrader
 call jupyter serverextension enable --sys-prefix --py nbgrader
 git clone https://github.com/daniuher/nbgrader_custom.git nbgrader
+call cd nbgrader
+call git checkout installer
+call rm -rf %cd%\.git
 pause
