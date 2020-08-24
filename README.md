@@ -1,5 +1,4 @@
-nbgrader toolbox
----------------------------
+# nbgrader toolbox
 
 [nbgrader](https://github.com/jupyter/nbgrader) is an open-source software systen for assigning and grading Jupyter notebooks. 
 nbgrader has a rich working environment and is operable through either commandline or
