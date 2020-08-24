@@ -169,8 +169,28 @@ we can now provide a comment under the particular cell.
 6. In the test cells, we can assign the points. They have been assigned automatically, howeve we can change them however we want. 
 7. Once done with grading the submission, move to the next one by clicking *next* in the top right corner. 
 
+### Upload grades to Moodle
+> After finishing our grading, we want to upload the grades to the course in Moodle. We will export a grades file, update the grades in it, and import it back to Moodle.
+
+1. Go to the Moodle course page and change the language to English.
+2. In the right vertical menu, select **Course grading**.
+3. In the top horizontal menu, select **Export**.
+4. In the secondary horizontal menu, select **Plain text file**.
+5. Leave checked only the assignment, which has been currently autograded.
+6. Click **Download**.
+7. Locate the downloaded file and move it into the course root folder.
+8. In the course folder, double-click **update_grades_file.bat**.
+9. Copy/paste or write the names of the .csv grades file and hit Enter.
+10. The grades within the file have now been updated. 
+11. Go back to the Moodle course page, change language to English and go to **Course Grading**.
+12. In the top horizontal menu, select **Import**.
+13. Insert the grades .csv file, leave everything as is by default and hit **Upload grades**.
+14. 
+
 ### Generate feedback
 > Once graded, we want to generate feedback, which will also show if the assignment was submitted late. 
 
 1. Within **Formgrader** in Jupyter, under the *Manage assignments* tab, select the **Generate feedback** icon.
 2. A subfolder *feedback* within the course folder will get created holding the feedback for all the students.
+
+
