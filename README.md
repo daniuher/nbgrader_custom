@@ -5,6 +5,9 @@ nbgrader has a rich working environment and is operable through either commandli
 a GUI Jupyter extension called Formgrader. [nbgrader's official documentation](https://nbgrader.readthedocs.io/en/stable/)
 provides a overview of the application and how to use it in its vanilla form.
 
+The nbgrader_toolbox provides a couple fo Python scripts with some linked excutable *.bat* files,
+through which we can easily manipulate the nbgrader ecosystem.
+
 These custom tools are attempting to simplify the workflow with nbgrader from installation
 to daily usage and to provide some tools to implement nbgrader into the courses tought at the University of Oulu.
 There are a lot of differences between the differences courses and how their system
@@ -14,9 +17,9 @@ and their funcitonality expanded while they are being tested on various other co
 Current version of the nbgrader_toolbox is working with the infrastructure of the
 Machine Vision course. 
 
-## Installation
 
-### Requirements 
+
+## Requirements 
 1. [Conda](https://www.anaconda.com/) is installed on your computer.
 2. Python 3.x is used through conda
 3. Python is added to the system PATH
@@ -29,10 +32,17 @@ and it wouldn't be good to try and polute the *base* environment with developmen
 future builds, this mandatory step will be removed and the user will simply choose, which environment
 they wish to install the application into. 
 
-Upon installing conda and creating **nbgrader_env** 
+## Installation
+Upon installing conda and creating **nbgrader_env**, proceed as follows:
 
-To install nbgrader and the toolbox, either download the `install_nbgrader.bat` or clope the
-nbgrader_toolbox repository and get the `install_nbgrader.bat` from the Master branch.
+1. Clone this repository or download it as a zip file and extract the downloaded archive.
+2. Double-click the executable `install_nbgrader.bat`
+
+Done!
+<br />
+The `install_nbgrader.bat` is a simple batch file, which executes a couple of installation commands
+and also clones another branch of this repository, which contains the necessary tools.
+
 
 ## Toolbox contents
 
