@@ -2,7 +2,8 @@
 
 [nbgrader](https://github.com/jupyter/nbgrader) is an open-source software systen for assigning and grading Jupyter notebooks. 
 nbgrader has a rich working environment and is operable through either commandline or
-a GUI Jupyter extension called Formgrader.
+a GUI Jupyter extension called Formgrader. [nbgrader's official documentation](https://nbgrader.readthedocs.io/en/stable/)
+provides a overview of the application and how to use it in its vanilla form.
 
 These custom tools are attempting to simplify the workflow with nbgrader from installation
 to daily usage and to provide some tools to implement nbgrader into the courses tought at the University of Oulu.
@@ -14,6 +15,7 @@ Current version of the nbgrader_toolbox is working with the infrastructure of th
 Machine Vision course. 
 
 ### Installation
+
 
 
 equirements: 
