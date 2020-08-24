@@ -16,11 +16,11 @@ Machine Vision course.
 
 ### Toolbox contents
 
-**Master branch**
+- **Master branch**
 	- install_nbgrader.bat 
 	- README.md
 	
-**Installer**
+- **Installer**
 	- tools
 		- *various tools* (described in next subsection)
 	- create_course_folder.bat
