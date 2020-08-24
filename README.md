@@ -20,7 +20,11 @@ Machine Vision course.
 1. [Conda](https://www.anaconda.com/) is installed on your computer.
 2. Python 3.x is used through conda
 3. Python is added to the system PATH
-4. **Create a virtual environment called *nbgrader_env***. For how to manage virtual
+4. **Create a virtual environment called *nbgrader_env***. This step is crucial in order to have
+all the tools working properly. It is currently done in this manner due to the development purposes
+and it wouldn't be good to try and polute the *base* environment with developmental progress. In the
+future builds, this step mandatory step will be removed and the user will simply choose, which environment
+they wish install the application into. For more on how to manage virtual
 environments, checkout the [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 
 
