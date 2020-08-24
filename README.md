@@ -43,8 +43,8 @@ Done!
 <br />
 Upon installation, the following hierarchy will get created:
 - nbgrader (folder)
-	- tools <br />
-		(.bat files)
+	- tools <br /> <br />
+		*(.bat files)*
 		- add_or_update_students.bat
 		- autograde_assignment.bat
 		- add_or_update_students.py
@@ -54,7 +54,7 @@ Upon installation, the following hierarchy will get created:
 		- sort_moodle_submissions.bat
 		- update_grades_file.bat
 		
-		(.py files)
+		*(.py files)*
 		- create_custom_config.py
 		- get_grades_to_excel.py
 		- git_assignments.py
@@ -65,10 +65,8 @@ Upon installation, the following hierarchy will get created:
 		- release_assignment.py
 		- send_feedback_to_students.py				
 		- upload_grades.py
+	- create_course_folder.bat
 
-
-The `install_nbgrader.bat` is a simple batch file, which executes a couple of installation commands
-and also clones another branch of this repository, which contains the necessary tools.
 
 
 ## Toolbox contents
