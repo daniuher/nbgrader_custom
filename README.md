@@ -78,6 +78,16 @@ Choose *y*. Course ID will be required.
 ## Step-by-step operating guide
 The created course folder can be stored wherever on the computer, however the file hierarchy within the course folder
 needs to remain unchannged and is to be followed. <br /> <br />
-- Source folder
+**Source** folder
 > Containg the master versions of the assignments. The master versions are created according to the [official documentation](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html)
+
+**Release** folder
+> Containing all the assignments, that have been released (= the student versions of the assignments.)
+
+**Submitted** folder
+> Contains all the submissions by the students. 
+
+These folder have to follow a strict hierarchy established by the *nbgrader* original application. 
+More information about the hierarchy [here](https://nbgrader.readthedocs.io/en/stable/user_guide/philosophy.html)
+
 
