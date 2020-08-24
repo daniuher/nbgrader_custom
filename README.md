@@ -103,4 +103,20 @@ WARNING! This file might not be created immediately, when you create the course 
 3. Click **Participants** in the right vertical menu.
 4. Select all the participants, however exclude the teachers and leave only students selected.
 5. In the roll-down menu below the participants list, select **Download table data as** *comma seperated values .csv*
-6. Locate the downloaded .csv file and move it into the course root folder.
+6. Locate the downloaded .csv file and move/copy it into the course root folder, that we created earlier.
+7. Within the course folder, double-click the **add_or_update_students.bat**. 
+8. Write or copy/paste the name of the downloaded .csv file.
+<br />
+You should all the students that have been added listed in the command-line. 
+
+**Check the course and the students**
+> When done importing the students, let's check the course through the nbgrader Formgrader extension for Jupyter.
+
+1. Within the course folder, double-click **launch_jupyter.bat**.
+2. In Jupyter, click the **Formgrader**, the last item in the top horizontal menu.
+3. In Formgrader, we can now see the available assignments, that are stored in the *source* folder. These assignments are not stored in the *gradebook.db* file yet,
+they are simply listed as detected assignments. 
+4. In the vertical menu on the left side, select **Manage students**. 
+5. We should now see a complete list of the students corresponding to the one in Moodle.
+
+
