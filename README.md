@@ -75,8 +75,7 @@ Upon installation, the following hierarchy will get created:
 4. You will be asked if you want to download the assignments from our private repository. 
 Choose *y*. Course ID will be required.
 
-## Step-by-step operating guide
-The created course folder can be stored wherever on the computer, however the file hierarchy within the course folder
+The created course root folder can be stored wherever on the computer, however the file hierarchy within the course root folder
 needs to remain unchannged and is to be followed. <br /> <br />
 **Source** folder
 > Containg the master versions of the assignments. The master versions are created according to the [official documentation](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html)
@@ -87,7 +86,21 @@ needs to remain unchannged and is to be followed. <br /> <br />
 **Submitted** folder
 > Contains all the submissions by the students. 
 
-These folder have to follow a strict hierarchy established by the *nbgrader* original application. 
+
+These folders have to follow a strict hierarchy established by the *nbgrader* original application. 
 More information about the hierarchy [here](https://nbgrader.readthedocs.io/en/stable/user_guide/philosophy.html)
 
+Everything within the nbgrader course is stored in the **gradebook.db** database file. This file contains all the information
+about the students, their grades, the assignments and so on. <br />
+WARNING! This file might not be created immediately, when you create the course folder, however it will get generated after we do our first necessary operations.
 
+## Step-by-step operating guide
+
+### Synchronize the students
+> We need to synchronize the students, that are enrolled in our Moodle with the student list stored within the **gradebook.db** file.
+1. Go to the Moodle course page.
+2. Change the Moodle interface language to English. IMPORTANT. It won't work otherwise. 
+3. Click **Participants** in the right vertical menu.
+4. Select all the participants, however exclude the teachers and leave only students selected.
+5. In the roll-down menu below the participants list, select **Download table data as** *comma seperated values .csv*
+6. Locate the downloaded .csv file and move it into the course root folder.
