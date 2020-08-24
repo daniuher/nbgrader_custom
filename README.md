@@ -42,7 +42,9 @@ Done!
 <br />
 <br />
 Upon installation, the following hierarchy will get created:
+- install_nbgrader.bat
 - nbgrader (folder)
+	- create_course_folder.bat
 	- tools <br /> <br />
 		*(.bat files)*
 		- add_or_update_students.bat
@@ -65,7 +67,7 @@ Upon installation, the following hierarchy will get created:
 		- release_assignment.py
 		- send_feedback_to_students.py				
 		- upload_grades.py
-	- create_course_folder.bat
+	
 
 
 
