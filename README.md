@@ -40,6 +40,33 @@ Upon installing conda and creating **nbgrader_env**, proceed as follows:
 
 Done!
 <br />
+<br />
+Upon installation, the following hierarchy will get created:
+- nbgrader (folder)
+	- tools
+		(.bat files)
+		- add_or_update_students.bat
+		- autograde_assignment.bat
+		- add_or_update_students.py
+		- launch_jupyter.bat
+		- pull_assignments.bat
+		- release_assignment.bat
+		- sort_moodle_submissions.bat
+		- update_grades_file.bat
+		
+		(.py files)
+		- create_custom_config.py
+		- get_grades_to_excel.py
+		- git_assignments.py
+		- late.py		
+		- moodle_submission_sort.py
+		- old_nbgrader_config.py
+		- print_assignments.py				
+		- release_assignment.py
+		- send_feedback_to_students.py				
+		- upload_grades.py
+
+
 The `install_nbgrader.bat` is a simple batch file, which executes a couple of installation commands
 and also clones another branch of this repository, which contains the necessary tools.
 
