@@ -69,18 +69,12 @@ Upon installation, the following hierarchy will get created:
 		- upload_grades.py
 
 
-
-
-## Toolbox contents
-
-- **Master** branch
-	- install_nbgrader.bat 
-	- README.md
-	
-- **Installer** branch
-	- tools
-		- *various tools* (described in next subsection)
-	- create_course_folder.bat
+## Create course folder
+1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
+2. A commandline window will appear. 
+3. Select a name for the course. It doesn't matter what the names is.
+4. You will be asked if you want to download the assignments from our repository. 
+Choose *y*. Course ID will be required.
 
 ### Tools
 
