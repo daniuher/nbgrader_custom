@@ -21,13 +21,15 @@ Machine Vision course.
 2. Python 3.x is used through conda
 3. Python is added to the system PATH
 4. **Create a virtual environment called *nbgrader_env***. This step is crucial(!) in order to have
-all the tools working properly. It is currently done in this manner due to the development purposes
-and it wouldn't be good to try and polute the *base* environment with developmental progress. In the
-future builds, this step mandatory step will be removed and the user will simply choose, which environment
-they wish install the application into. For more on how to manage virtual
+all the tools working properly. You can create a new environment or clone existing one, so you don't have
+reinstall a lot of the basic packages. For more on how to manage virtual
 environments, checkout the [conda documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+It is currently done in this manner due to the development purposes
+and it wouldn't be good to try and polute the *base* environment with developmental progress. In the
+future builds, this mandatory step will be removed and the user will simply choose, which environment
+they wish to install the application into. 
 
-
+Upon installing conda and creating **nbgrader_env** 
 
 To install nbgrader and the toolbox, either download the `install_nbgrader.bat` or clope the
 nbgrader_toolbox repository and get the `install_nbgrader.bat` from the Master branch.
