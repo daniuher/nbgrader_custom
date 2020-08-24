@@ -68,28 +68,16 @@ Upon installation, the following hierarchy will get created:
 		- send_feedback_to_students.py				
 		- upload_grades.py
 
-
 ## Create course folder
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
 2. A commandline window will appear. 
 3. Select a name for the course. It doesn't matter what the names is.
-4. You will be asked if you want to download the assignments from our repository. 
+4. You will be asked if you want to download the assignments from our private repository. 
 Choose *y*. Course ID will be required.
 
-### Tools
+## Step-by-step operating guide
+The created course folder can be stored wherever on the computer, however the file hierarchy within the course folder
+needs to remain unchannged and is to be followed. <br /> <br />
+- Source folder
+> Containg the master versions of the assignments. The master versions are created according to the [official documentation](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html)
 
-All the tools are made easy to operate 
-
-equirements: 
-
-Anaconda installed on the computer with Python 3.x
-
-Guide:
-
-	Simply double-click the file. A folder will be pulled from another git repository with 
-	all the tools and files that you need. The assignments for Machine Vision should
-	be up to date. 
-
-	As a next step, click the create course folder button, which will create
-	the course for Machine Vision. So far, everything is created for the
-	Machine Vision purposes. 
