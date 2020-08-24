@@ -68,6 +68,9 @@ Upon installation, the following hierarchy will get created:
 		- send_feedback_to_students.py				
 		- upload_grades.py
 
+<br />
+Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
+
 ## Create course folder
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
 2. A commandline window will appear. 
@@ -142,5 +145,32 @@ they are simply listed as detected assignments.
 7. Paste the name of the submission archive and hit Enter. 
 8. We should have the archive now extracted according to the hierarchical rules. 
 9. Delete the archive file.
+<br />
+In Jupyter (launch_jupyter.bat if closed), we can now see that for the assignment, a number of submissions have been added. 
 
-> In Jupyter (launch_jupyter.bat if closed), we can now see that for the assignment, a number of submissions have been added. 
+### Autograde submissions
+> Upon collection the submission, the next step is to autograde them
+
+1. In the course folder, select **autograde_assignemt.bat**. 
+2. Write, which assignment is to be autograded, and hit Enter.
+
+<br />
+The autograding might take some time. It needs re-insert all the tests, run the noteboks and store everything in the database. 
+
+### Manual grading
+> After autograding
+
+1. Launch Jupyter. (*launch_jupyter.bat*)
+2. Select Formgrader in the top menu.
+3. Select **Manual Grading** in the left vertical menu.
+4. Select the assignment, notebook and click the first submission.
+5. If we scroll-down to the sections, which were supposed to be filled by the students, we can see, that
+we can now provide a comment under the particular cell. 
+6. In the test cells, we can assign the points. They have been assigned automatically, howeve we can change them however we want. 
+7. Once done with grading the submission, move to the next one by clicking *next* in the top right corner. 
+
+### Generate feedback
+> Once graded, we want to generate feedback, which will also show if the assignment was submitted late. 
+
+1. Within **Formgrader** in Jupyter, under the *Manage assignments* tab, select the **Generate feedback** icon.
+2. A subfolder *feedback* within the course folder will get created holding the feedback for all the students.
