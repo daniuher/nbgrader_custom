@@ -14,18 +14,29 @@ and their funcitonality expanded while they are being tested on various other co
 Current version of the nbgrader_toolbox is working with the infrastructure of the
 Machine Vision course. 
 
+### Installation
+
+**Requirements**  return
+asdg
+
+
+To install nbgrader and the toolbox, either download the `install_nbgrader.bat` or clope the
+nbgrader_toolbox repository and get the `install_nbgrader.bat` from the Master branch.
+
 ### Toolbox contents
 
-- **Master branch**
+- **Master** branch
 	- install_nbgrader.bat 
 	- README.md
 	
-- **Installer**
+- **Installer** branch
 	- tools
 		- *various tools* (described in next subsection)
 	- create_course_folder.bat
 
+### Tools
 
+All the tools are made easy to operate 
 
 equirements: 
 
