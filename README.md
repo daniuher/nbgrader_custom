@@ -43,7 +43,7 @@ Done!
 <br />
 Upon installation, the following hierarchy will get created:
 - nbgrader (folder)
-	- tools
+	- tools <br />
 		(.bat files)
 		- add_or_update_students.bat
 		- autograde_assignment.bat
