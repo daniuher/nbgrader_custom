@@ -48,8 +48,7 @@ Upon installation, the following hierarchy will get created:
 	- tools <br /> <br />
 		*(.bat files)*
 		- add_or_update_students.bat
-		- autograde_assignment.bat
-		- add_or_update_students.py
+		- autograde_assignment.bat	
 		- launch_jupyter.bat
 		- pull_assignments.bat
 		- release_assignment.bat
@@ -57,6 +56,7 @@ Upon installation, the following hierarchy will get created:
 		- update_grades_file.bat
 
 		*(.py files)*
+		- add_or_update_students.py
 		- create_custom_config.py
 		- get_grades_to_excel.py
 		- git_assignments.py
@@ -120,3 +120,27 @@ they are simply listed as detected assignments.
 5. We should now see a complete list of the students corresponding to the one in Moodle.
 
 
+### Release an assignment
+> We want to generate the student version of the master assignment. Meaning, we want to remove all the tests, solutions and leave blank spaces for the students to fill in. 
+
+1. In the course folder, double-click **release_assignment.bat**. It will list all the available assignments in a table on top.
+2. Write, which assignments you wish to release. You have to write the full name of the assignment.
+3. Provide the due date within the format that is specified. *YYYY-MM-DD HH:MM:SS*. Make sure the due date is the same as in the Moodle page for the assignment.
+4. The released assignment is stored in the *release* folder. 
+5. Archive the released files and upload them to Moodle.
+
+### Sort Moodle submissions
+!! We are collecting only the *.ipynb* files.
+> After the deadline, let's collect the submissions as follows:
+
+1. Within the moodle course page, set the interface language to English in the top roll-down menu.
+2. Go to the assignment page.
+3. Select all the submissions and select **Download selected submissions**.
+4. Locate the downloaded archive and move into the **submitted** subfolder. **coursef_root_folder/submitted**.
+5. Copy the name of the downloaded archive. Don't change the name!
+6. In the course root folder, double-click the **sort_moodle_submissions.bat**.
+7. Paste the name of the submission archive and hit Enter. 
+8. We should have the archive now extracted according to the hierarchical rules. 
+9. Delete the archive file.
+
+> In Jupyter (launch_jupyter.bat if closed), we can now see that for the assignment, a number of submissions have been added. 
