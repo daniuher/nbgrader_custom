@@ -1,4 +1,6 @@
 @echo off
+call conda activate
+call conda create --name nbgrader_env
 call conda activate nbgrader_env
 call conda install gitpython
 call pip install tabulate
