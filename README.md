@@ -1,5 +1,9 @@
 # nbgrader toolbox
 
+## 26.8.2020 UPDATE
+> the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
+> to recreate it. It is recommended to choose *(y)* and recreate the environment. 
+
 [nbgrader](https://github.com/jupyter/nbgrader) is an open-source software systen for assigning and grading Jupyter notebooks. 
 nbgrader has a rich working environment and is operable through either commandline or
 a GUI Jupyter extension called Formgrader. [nbgrader's official documentation](https://nbgrader.readthedocs.io/en/stable/)
