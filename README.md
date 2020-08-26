@@ -1,6 +1,6 @@
 # nbgrader toolbox
 
-## 26.8.2020 UPDATE
+### 26.8.2020 UPDATE
 > the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
 > to recreate it. It is recommended to choose *(y)* and recreate the environment. 
 
