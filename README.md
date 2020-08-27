@@ -69,6 +69,7 @@ Upon installation, the following hierarchy will get created:
 <br />
 Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
 
+
 ## Create course folder
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
 2. A commandline window will appear. 
@@ -96,6 +97,18 @@ about the students, their grades, the assignments and so on. <br />
 WARNING! This file might not be created immediately, when you create the course folder, however it will get generated after we do our first necessary operations.
 
 ## Step-by-step operating guide
+{*
+1. Synchronize the students with Moodle
+2. Release an assignments, or in other words, generate the student version
+3. Upload the released version into Moodle. <br />
+... <br />
+4. Collect student submission.
+5. Sort the submission.
+6. Autograde assignment.
+7. Check them manually, grade manual tasks.
+8. Upgrade the grades .csv file
+9. Upload grades to Moodle
+*}
 
 ### Synchronize the students
 > We need to synchronize the students, that are enrolled in our Moodle with the student list stored within the **gradebook.db** file.
