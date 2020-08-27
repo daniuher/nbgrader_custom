@@ -37,7 +37,7 @@ Machine Vision course.
 3. Python is added to the system PATH
 
 ## Installation
-Upon installing conda and creating **nbgrader_env**, proceed as follows:
+Upon installing conda, proceed as follows:
 
 1. Clone this repository or download it as a zip file and extract the downloaded archive.
 2. Double-click the executable `install_nbgrader.bat`
