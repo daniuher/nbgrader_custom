@@ -12,7 +12,7 @@ q = input('would you like to pull the assignments from the git repository? [y/n]
 if q == 'y':
     course_branch = input('Course ID: ')
     print('Downloading from repository...')
-    my_repo = git.Repo.clone_from('https://github.com/daniuher/course_assignments.git', 'assignments')
+    my_repo = git.Repo.clone_from('https://daniuher@github.com/daniuher/course_assignments.git', 'assignments')
     
     try:
         my_repo.git.checkout(course_branch)
