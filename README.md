@@ -1,6 +1,11 @@
 # nbgrader toolbox
 
 ### UPDATES
+**27.8.2020 assignment pull adjusted**
+> in order to be able to pull the assignments, you need to be a collaborator in the repository. 
+> Free github supports only three collaborators and currently there are two. Therefore, if similar system
+> is to be used in the future, a different method needs to be setup (gitlab, etc.)
+
 **26.8.2020 nbgrader_env automatic now**
 > the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
 > to recreate it. It is recommended to choose *(y)* and recreate the environment. 
