@@ -76,7 +76,10 @@ Should you accidentaly lose or delete the tools, they can be downloaded/cloned f
 2. A commandline window will appear. 
 3. Select a name for the course. It doesn't matter what the names is.
 4. You will be asked if you want to download the assignments from our private repository. 
-Choose *y*. Course ID will be required.
+Choose *y*. Course ID will be required. You will be prompted for the username and password and if you are
+not a collaborator, you will not be able to clone the assignments. If you are a collaborator and managed
+to eneter your credentials wrong, you need to remove them from 
+Control Panel > User Accounts > Credential Manager > Windows Credentials
 
 The created course root folder can be stored wherever on the computer, however the file hierarchy within the course root folder
 needs to remain unchannged and is to be followed. <br /> <br />
