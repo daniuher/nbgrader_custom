@@ -97,7 +97,6 @@ about the students, their grades, the assignments and so on. <br />
 WARNING! This file might not be created immediately, when you create the course folder, however it will get generated after we do our first necessary operations.
 
 ## Step-by-step operating guide
-{*
 1. Synchronize the students with Moodle
 2. Release an assignments, or in other words, generate the student version
 3. Upload the released version into Moodle. <br />
@@ -108,7 +107,8 @@ WARNING! This file might not be created immediately, when you create the course 
 7. Check them manually, grade manual tasks.
 8. Upgrade the grades .csv file
 9. Upload grades to Moodle
-*}
+<br />
+<br />
 
 ### Synchronize the students
 > We need to synchronize the students, that are enrolled in our Moodle with the student list stored within the **gradebook.db** file.
