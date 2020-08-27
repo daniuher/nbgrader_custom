@@ -2,7 +2,7 @@
 
 ### UPDATES
 **27.8.2020 Private repo fix**
-> It is possible to clone the private repository from now on.
+> It is possible to clone the private repository from now on. It is however password protected.
 
 **26.8.2020 nbgrader_env automatic now**
 > the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
