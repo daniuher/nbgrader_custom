@@ -15,7 +15,7 @@ try:
 except:
     print('Could not find the participants.csv file')
     participants_file = input('Please enter the name of the participants file: ')
-    df = pd.read_csv('participants.csv')
+    df = pd.read_csv(participants_file)
 
 
 try:
