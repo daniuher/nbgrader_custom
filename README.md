@@ -1,6 +1,10 @@
 # nbgrader toolbox
 
 ### UPDATES
+**31.8.2020 moodle submission progress**
+> Moodle can collect only zip files, therefore moodle sort has been adjusted to that
+> plus it is now possible to sort group submission plus incorrectly named submissions
+
 **27.8.2020 assignment pull adjusted**
 > in order to be able to pull the assignments, you need to be a collaborator in the repository. 
 > Free github supports only three collaborators and currently there are two. Therefore, if similar system
