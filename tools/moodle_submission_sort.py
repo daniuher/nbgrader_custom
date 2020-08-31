@@ -23,7 +23,7 @@ def getStudentNumberFromNotebook(ntbpath):
     nb = nbformat.read(ntbpath, as_version = 4)
     stuff = nb.cells[0].source
     for line in stuff.splitlines():
-        if 'Student ID:' in line:
+        if 'Student ID' in line:
             temp_number = re.sub("[^0-9]", "", line)
             student_number = re.findall('.......', temp_number)
             return student_number
