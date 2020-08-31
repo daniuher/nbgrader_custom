@@ -9,14 +9,25 @@ Created on Thu Aug 13 19:52:39 2020
 import pandas as pd
 from nbgrader.api import Gradebook
 
-participants_file = input('Paricipants .csv file from moodle: ')
-df = pd.read_csv(participants_file)
+
+try:
+    df = pd.read_csv('participants.csv')
+except:
+    print('Could not find the participants.csv file')
+    participants_file = input('Please enter the name of the participants file: ')
+    df = pd.read_csv('participants.csv')
+
 
 try:
     df['ID number'] = df['ID number'].fillna(0)
         
     
     with Gradebook('sqlite:///gradebook.db') as gb:
+        
+        a = gb.students
+        for student in gb.students:
+            gb.remove_student(student.id)
+        a = gb.students
         
         for index, row in df.iterrows():
             student_id = int(row['ID number'])
@@ -30,6 +41,7 @@ try:
             print(row['ID number'], row['First name'], row['Surname'], row['Email address'])
             
         gb.close()
+        
 except:
     print('The .csv file is not in English. Please switch moodle to English and download the student list again.')    
     
