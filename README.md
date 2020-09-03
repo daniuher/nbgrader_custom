@@ -20,13 +20,13 @@
 
 <br /> <br />
 
+The nbgrader_toolbox provides a couple fo Python scripts with some linked excutable *.bat* files,
+through which we can easily manipulate the nbgrader ecosystem.
+
 [nbgrader](https://github.com/jupyter/nbgrader) is an open-source software systen for assigning and grading Jupyter notebooks. 
 nbgrader has a rich working environment and is operable through either commandline or
 a GUI Jupyter extension called Formgrader. [nbgrader's official documentation](https://nbgrader.readthedocs.io/en/stable/)
 provides a overview of the application and how to use it in its vanilla form.
-
-The nbgrader_toolbox provides a couple fo Python scripts with some linked excutable *.bat* files,
-through which we can easily manipulate the nbgrader ecosystem.
 
 These custom tools are attempting to simplify the workflow with nbgrader from installation
 to daily usage and to provide some tools to implement nbgrader into the courses tought at the University of Oulu.
