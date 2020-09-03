@@ -223,7 +223,10 @@ we can now provide a comment under the particular cell.
 11. Go back to the Moodle course page, change language to English and go to **Course Grading**.
 12. In the top horizontal menu, select **Import**.
 13. Insert the grades .csv file, leave everything as is by default and hit **Upload grades**.
-14. 
+14. Unfortunately, Moodle assigns its own ID numbers for the students, so the UniOulu ID will not match.
+Therefore, make sure to set the mapping **Email address** map to **Email address**. That way, the students
+will identified by email, which should be also unique for each student.
+15. Map the Assignment column to the grades for the corresponding assignment and upload.
 
 ### Generate feedback
 > Once graded, we want to generate feedback, which will also show if the assignment was submitted late. 
