@@ -1,6 +1,10 @@
 # nbgrader toolbox
 
 ### UPDATES
+**3.9.2020 send feedback to students implemented**
+> from now on, generated feedback will be sent to corresponding students via email
+> by clicking the send_feedback_to_students.bat and specifying the assignment
+
 **31.8.2020 moodle submission progress**
 > Moodle can collect only zip files, therefore moodle sort has been adjusted to that
 > plus it is now possible to sort group submission plus incorrectly named submissions
