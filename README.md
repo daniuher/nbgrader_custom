@@ -80,8 +80,8 @@ Upon installation, the following hierarchy will get created:
 		- send_feedback_to_students.py				
 		- upload_grades.py
 
-<br />
-- Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
+## Reinstall
+Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
 <br />
 <br />
 If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment <br />
