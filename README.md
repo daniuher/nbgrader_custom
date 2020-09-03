@@ -123,7 +123,9 @@ WARNING! This file might not be created immediately, when you create the course 
 6. Autograde assignment.
 7. Check them manually, grade manual tasks.
 8. Upgrade the grades .csv file
-9. Upload grades to Moodle
+9. Upload grades to Moodle.
+10. Generate feedback for the graded assignments.
+11. Send feedback to students via email.
 <br />
 <br />
 
@@ -218,7 +220,20 @@ we can now provide a comment under the particular cell.
 ### Generate feedback
 > Once graded, we want to generate feedback, which will also show if the assignment was submitted late. 
 
+**Formgrader approach**
 1. Within **Formgrader** in Jupyter, under the *Manage assignments* tab, select the **Generate feedback** icon.
 2. A subfolder *feedback* within the course folder will get created holding the feedback for all the students.
 
+**File approach**
+1. Within the course folder, double-click the **generate_feedback.bat**.
+2. In the command line window, specify the assignment, for which assignment you want to generate the feedback for.<br />
+*Please make sure that the grading (manual and auto) is final before generating the feedback.*
 
+### Send feedback to students
+> After generating the feedback, we want send the feedback *.html* file to the corresponding students.
+> Unfortunately Moodle cannot accept file feedbacks, so the feedback needs to be sent through email.
+
+1. Within the course folder, double-click the **send_feedback_to_students.bat**.
+2. Specify the assignment, for which you want the feedback to be sent out.
+<br />
+*Again, make very sure that grading is final.*<br />
