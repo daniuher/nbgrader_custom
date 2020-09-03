@@ -84,7 +84,7 @@ Upon installation, the following hierarchy will get created:
 - Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
 <br />
 <br />
-- If you are reinstalling the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment <br />
+If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment <br />
 	- Open the anaconda prompt <br />
 	- use command `conda remove --name nbgrader_env --all` <br />
 	- Go to your Anaconda3 folder (usually located on C drive alongside the Documents, Desktop, etc. folders. Or directly in C next the Program files folder) <br />
