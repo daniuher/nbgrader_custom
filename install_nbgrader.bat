@@ -5,6 +5,9 @@ call conda activate nbgrader_env
 call conda install gitpython
 call pip install tabulate
 call pip install pandas
+call pip install opencv-python
+call pip install opencv-contrib-python
+call pip install matplotlib
 call conda install jupyter
 call conda install -c conda-forge nbgrader
 call jupyter nbextension install --sys-prefix --py nbgrader --overwrite
