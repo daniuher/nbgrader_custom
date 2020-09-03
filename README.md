@@ -20,7 +20,7 @@
 
 <br /> <br />
 
-The nbgrader_toolbox provides a couple fo Python scripts with some linked excutable *.bat* files,
+The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
 through which we can easily manipulate the nbgrader ecosystem.
 
 [nbgrader](https://github.com/jupyter/nbgrader) is an open-source software systen for assigning and grading Jupyter notebooks. 
