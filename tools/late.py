@@ -18,7 +18,7 @@ class SubMarks(BasePlugin):
     
         """Machine Vision penalty policy"""
         if total_seconds_late == 0:
-            return score
+            return score*0
         elif total_seconds_late > 0 and total_seconds_late <= 172800: # 0-2 days
             return score*0.25
         elif total_seconds_late > 172800 and total_seconds_late <= 345600: # 2-4 days
