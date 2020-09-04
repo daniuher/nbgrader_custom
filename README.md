@@ -1,6 +1,6 @@
 # nbgrader toolbox
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://github.com/daniuher/nbgrader_toolbox.svg?branch=master)](https://github.com/daniuher/nbgrader_toolbox)
 
 ### UPDATES
 **3.9.2020 send feedback to students implemented**
