@@ -98,6 +98,7 @@ Should you accidentaly lose or delete the tools, they can be downloaded/cloned f
 Follow the uninstall guide above and then install a fresh new installation following the installation guide above.
 
 
+# Orientation
 
 ## Create course folder
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
