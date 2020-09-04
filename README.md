@@ -1,5 +1,7 @@
 # nbgrader toolbox
 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 ### UPDATES
 **3.9.2020 send feedback to students implemented**
 > from now on, generated feedback will be sent to corresponding students via email
