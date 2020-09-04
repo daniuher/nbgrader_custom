@@ -1,6 +1,8 @@
 # nbgrader toolbox
 
-> For the documentation about the tools themselves, the scripts and how to alter them, go to the **doc** folder and choose Python docu. 
+> **For the documentation about the tools themselves, the scripts and how to alter them, go to the *doc* folder and choose Python docu.**  
+
+
 
 The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
 through which we can easily manipulate the nbgrader ecosystem.
