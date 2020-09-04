@@ -1,7 +1,5 @@
 # nbgrader toolbox
 
-[![Build Status](https://github.com/daniuher/nbgrader_toolbox.svg?branch=master)](https://github.com/daniuher/nbgrader_toolbox)
-
 ### UPDATES
 **3.9.2020 send feedback to students implemented**
 > from now on, generated feedback will be sent to corresponding students via email
@@ -103,6 +101,8 @@ Follow the uninstall guide above and then install a fresh new installation follo
 # Orientation
 
 ## Create course folder
+![Create course folder](https://github.com/daniuher/nbgrader_toolbox/blob/master/doc/create_course_folder.gif)
+
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
 2. A commandline window will appear. 
 3. Select a name for the course. It doesn't matter what the names is.
