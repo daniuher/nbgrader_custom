@@ -58,27 +58,27 @@ Upon installation, the following hierarchy will get created:
 - nbgrader (folder)
 	- create_course_folder.bat
 	- tools
-		- ***(.bat files)***
-		- add_or_update_students.bat
-		- autograde_assignment.bat	
-		- launch_jupyter.bat
-		- pull_assignments.bat
-		- release_assignment.bat
-		- sort_moodle_submissions.bat
-		- update_grades_file.bat
+		1. ***(.bat files)***
+			- add_or_update_students.bat
+			- autograde_assignment.bat	
+			- launch_jupyter.bat
+			- pull_assignments.bat
+			- release_assignment.bat
+			- sort_moodle_submissions.bat
+			- update_grades_file.bat
 
-		- ***(.py files)***
-		- add_or_update_students.py
-		- create_custom_config.py
-		- get_grades_to_excel.py
-		- git_assignments.py
-		- late.py		
-		- moodle_submission_sort.py
-		- old_nbgrader_config.py
-		- print_assignments.py				
-		- release_assignment.py
-		- send_feedback_to_students.py				
-		- upload_grades.py
+		2. ***(.py files)***
+			- add_or_update_students.py
+			- create_custom_config.py
+			- get_grades_to_excel.py
+			- git_assignments.py
+			- late.py		
+			- moodle_submission_sort.py
+			- old_nbgrader_config.py
+			- print_assignments.py				
+			- release_assignment.py
+			- send_feedback_to_students.py				
+			- upload_grades.py
 
 ## Reinstall
 
