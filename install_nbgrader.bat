@@ -8,6 +8,7 @@ call pip install pandas
 call pip install opencv-python
 call pip install opencv-contrib-python
 call pip install matplotlib
+call pip install xlsxwriter
 call conda install jupyter
 call conda install -c conda-forge nbgrader
 call jupyter nbextension install --sys-prefix --py nbgrader --overwrite
