@@ -169,6 +169,8 @@ they are simply listed as detected assignments.
 4. In the vertical menu on the left side, select **Manage students**. 
 5. We should now see a complete list of the students corresponding to the one in Moodle.
 
+![Launch Jupyter](https://github.com/daniuher/nbgrader_toolbox/blob/master/doc/launch_jupyter.gif)
+
 
 ### Release an assignment
 > We want to generate the student version of the master assignment. Meaning, we want to remove all the tests, solutions and leave blank spaces for the students to fill in. 
@@ -192,7 +194,7 @@ they are simply listed as detected assignments.
 7. Paste the name of the submission archive and hit Enter. 
 8. We should have the archive now extracted according to the hierarchical rules. 
 9. Delete the archive file.
-<br />
+
 In Jupyter (launch_jupyter.bat if closed), we can now see that for the assignment, a number of submissions have been added. 
 
 ### Autograde submissions
@@ -201,7 +203,7 @@ In Jupyter (launch_jupyter.bat if closed), we can now see that for the assignmen
 1. In the course folder, select **autograde_assignemt.bat**. 
 2. Write, which assignment is to be autograded, and hit Enter.
 
-<br />
+
 The autograding might take some time. It needs re-insert all the tests, run the noteboks and store everything in the database. 
 
 ### Manual grading
@@ -248,7 +250,8 @@ will identified by email, which should be also unique for each student.
 
 **File approach**
 1. Within the course folder, double-click the **generate_feedback.bat**.
-2. In the command line window, specify the assignment, for which assignment you want to generate the feedback for.<br />
+2. In the command line window, specify the assignment, for which assignment you want to generate the feedback for.
+
 *Please make sure that the grading (manual and auto) is final before generating the feedback.*
 
 ### Send feedback to students
@@ -257,5 +260,5 @@ will identified by email, which should be also unique for each student.
 
 1. Within the course folder, double-click the **send_feedback_to_students.bat**.
 2. Specify the assignment, for which you want the feedback to be sent out.
-<br />
-*Again, make very sure that grading is final.*<br />
+
+*Again, make very sure that grading is final.*
