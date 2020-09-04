@@ -133,9 +133,8 @@ WARNING! This file might not be created immediately, when you create the course 
 
 ## Step-by-step operating guide
 1. Synchronize the students with Moodle
-2. Release an assignments, or in other words, generate the student version
-3. Upload the released version into Moodle. <br />
-... <br />
+2. Release an assignments, or in other words, generate the student version.
+3. Upload the released version into Moodle.
 4. Collect student submission.
 5. Sort the submission.
 6. Autograde assignment.
@@ -144,8 +143,7 @@ WARNING! This file might not be created immediately, when you create the course 
 9. Upload grades to Moodle.
 10. Generate feedback for the graded assignments.
 11. Send feedback to students via email.
-<br />
-<br />
+
 
 ### Synchronize the students
 > We need to synchronize the students, that are enrolled in our Moodle with the student list stored within the **gradebook.db** file.
@@ -156,9 +154,10 @@ WARNING! This file might not be created immediately, when you create the course 
 5. In the roll-down menu below the participants list, select **Download table data as** *comma seperated values .csv*
 6. Locate the downloaded .csv file and move/copy it into the course root folder, that we created earlier.
 7. Within the course folder, double-click the **add_or_update_students.bat**. 
-8. Write or copy/paste the name of the downloaded .csv file.
-<br />
-You should all the students that have been added listed in the command-line. 
+8. You can either rename the downloaded participants file to **participants.csv**, in which case the the file will get recognized automatically, or just copy/paste the name of the downloaded .csv file to the commands line. Hit enter. 
+
+
+You should see all the students that have been added listed in the command-line. 
 
 **Check the course and the students**
 > When done importing the students, let's check the course through the nbgrader Formgrader extension for Jupyter.
