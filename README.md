@@ -1,24 +1,6 @@
 # nbgrader toolbox
 
-### UPDATES
-**3.9.2020 send feedback to students implemented**
-> from now on, generated feedback will be sent to corresponding students via email
-> by clicking the send_feedback_to_students.bat and specifying the assignment
-
-**31.8.2020 moodle submission progress**
-> Moodle can collect only zip files, therefore moodle sort has been adjusted to that
-> plus it is now possible to sort group submission plus incorrectly named submissions
-
-**27.8.2020 assignment pull adjusted**
-> in order to be able to pull the assignments, you need to be a collaborator in the repository. 
-> Free github supports only three collaborators and currently there are two. Therefore, if similar system
-> is to be used in the future, a different method needs to be setup (gitlab, etc.)
-
-**26.8.2020 nbgrader_env automatic now**
-> the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
-> to recreate it. It is recommended to choose *(y)* and recreate the environment. 
-
-
+> For the documentation about the tools themselves, the scripts and how to alter them, go to the **doc** folder and choose Python docu. 
 
 The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
 through which we can easily manipulate the nbgrader ecosystem.
