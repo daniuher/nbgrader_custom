@@ -58,7 +58,7 @@ Upon installation, the following hierarchy will get created:
 - nbgrader (folder)
 	- create_course_folder.bat
 	- tools
-		1. ***(.bat files)***
+		- ***(.bat files)***
 			- add_or_update_students.bat
 			- autograde_assignment.bat	
 			- launch_jupyter.bat
@@ -67,7 +67,7 @@ Upon installation, the following hierarchy will get created:
 			- sort_moodle_submissions.bat
 			- update_grades_file.bat
 
-		2. ***(.py files)***
+		- ***(.py files)***
 			- add_or_update_students.py
 			- create_custom_config.py
 			- get_grades_to_excel.py
