@@ -89,7 +89,7 @@ If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgra
 - Open the anaconda prompt 
 - use command 
 ```sh
-# conda remove --name nbgrader_env --all
+\> conda remove --name nbgrader_env --all
 ```
 - Go to your Anaconda3 folder (usually located on C drive alongside the Documents, Desktop, etc. folders. Or directly in C next the Program files folder) <br />
 - Within Anaconda3 folder, go to `Anaconda3 -> envs` and delete the *nbgrader_env* folder and the *.conda_envs_dir_test* 
