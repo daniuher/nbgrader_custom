@@ -69,13 +69,20 @@ files = [ x for x in files if ".ipynb" not in x ]
 
 
 
-timestamps = list()
 with zipfile.ZipFile(fileitself, 'r') as zip_ref:
     for sub in zip_ref.infolist():
-        timestamps.append(sub.date_time)
-    zip_ref.extractall(filepath+'\\extracted')
+        timestamp = datetime(*sub.date_time[0:])
+        zip_ref.extract(sub.filename, path=filepath+'\\extracted')
+        
+        text_file = open(filepath+'\\extracted\\'+sub.filename.split('/')[0]+'\\'+"timestamp.txt", "w")
+        text_file.write(str(timestamp))
+        text_file.close()
+        
+    # zip_ref.extractall(filepath+'\\extracted')
 # os.remove(filepath)
+
 extractedpath = filepath+'\\extracted'
+
 
 submissions = os.listdir(extractedpath)
 # submissions = [submission for submission in submissions]
@@ -87,7 +94,11 @@ for submission in submissions:
     temp_file = temp_zip_file.split('.')[0] # submitted_file 
     assignment_number = temp_file.split('_')[1] 
     
+    # timestamp = os.path.getctime(temp_path+'\\'+temp_zip_file)
+    # timestamp = datetime.utcfromtimestamp(timestamp)
+    
     with zipfile.ZipFile(temp_path+'\\'+temp_zip_file, 'r') as zip_ref:
+        # a = zip_ref.getinfo()
         zip_ref.extractall(temp_path+'\\sub')
     os.remove(temp_path+'\\'+temp_zip_file)
     deleteCheckpoints(temp_path+'\\sub')
@@ -104,8 +115,6 @@ for submission in submissions:
     #     student_numbers = getStudentNumberFromNotebook(temp_path+'\\'+ntb_name)
                     
         
-    timestamp = timestamps.pop(0)
-    timestamp = datetime(*timestamp[0:])
     
     # create folder for each student seperetaly
     for student_number in student_numbers:
@@ -126,15 +135,16 @@ for submission in submissions:
         # timestamp = os.path.getmtime(temp_path+'\\'+temp_zip_file)
         # timestamp = datetime.fromtimestamp(timestamp)
         
-        text_file = open(student_path+'\\'+assignment_name+'\\'+"timestamp.txt", "w")
-        text_file.write(str(timestamp))
-        text_file.close()
+        # text_file = open(student_path+'\\'+assignment_name+'\\'+"timestamp.txt", "w")
+        # text_file.write(str(timestamp))
+        # text_file.close()
         
         
         # Copying the supporting files
         copy_tree(released_assignment_path, student_path+'\\'+assignment_name)
         os.remove(student_path+'\\'+assignment_name+'\\'+correct_name)
         shutil.copy(temp_path+'\\'+correct_name, student_path+'\\'+assignment_name+'\\'+correct_name)
+        shutil.copy(temp_path+'\\timestamp.txt', student_path+'\\'+assignment_name+'\\timestamp.txt')
     
     
     # with zipfile.ZipFile(temp_path+'\\'+temp_zip_file, 'r') as zip_ref:
