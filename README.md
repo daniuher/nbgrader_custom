@@ -16,7 +16,8 @@
 **Python documentation created**
 - Within the docu folder, please find the documentation for the different Python tools.
 
-
+<br />
+<br />
 
 The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
 through which we can easily manipulate the nbgrader ecosystem.
