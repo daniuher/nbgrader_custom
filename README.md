@@ -18,7 +18,7 @@
 > the creation of the nbgrader_env is from now on automatic. If the environment has already been created, the installer will ask, if you want 
 > to recreate it. It is recommended to choose *(y)* and recreate the environment. 
 
-<br /> <br />
+
 
 The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
 through which we can easily manipulate the nbgrader ecosystem.
@@ -51,8 +51,8 @@ Upon installing conda, proceed as follows:
 2. Double-click the executable `install_nbgrader.bat`
 
 Done!
-<br />
-<br />
+
+
 Upon installation, the following hierarchy will get created:
 - install_nbgrader.bat
 - nbgrader (folder)
@@ -81,19 +81,20 @@ Upon installation, the following hierarchy will get created:
 		- upload_grades.py
 
 ## Reinstall
+
 Should you accidentaly lose or delete the tools, they can be downloaded/cloned from this repository from the *installer* branch.
-<br />
-<br />
-If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment <br />
-	- Open the anaconda prompt <br />
-	- use command 
-	```sh
-	# conda remove --name nbgrader_env --all
-	```
-	- Go to your Anaconda3 folder (usually located on C drive alongside the Documents, Desktop, etc. folders. Or directly in C next the Program files folder) <br />
-	- Within Anaconda3 folder, go to `Anaconda3 -> envs` and delete the *nbgrader_env* folder and the *.conda_envs_dir_test* 
-	<br />
-	<br />
+
+
+If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment 
+- Open the anaconda prompt 
+- use command 
+```sh
+# conda remove --name nbgrader_env --all
+```
+- Go to your Anaconda3 folder (usually located on C drive alongside the Documents, Desktop, etc. folders. Or directly in C next the Program files folder) <br />
+- Within Anaconda3 folder, go to `Anaconda3 -> envs` and delete the *nbgrader_env* folder and the *.conda_envs_dir_test* 
+
+
 
 ## Create course folder
 1. Within the nbgrader folder, doublie-click the `create_course_folder.bat` file. 
