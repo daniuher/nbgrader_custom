@@ -86,7 +86,8 @@ Should you accidentaly lose or delete the tools, they can be downloaded/cloned f
 <br />
 If you are **reinstalling** the nbgrader_toolbox, make sure to remove the *nbgrader_env* environment <br />
 	- Open the anaconda prompt <br />
-	- use command `conda remove --name nbgrader_env --all` <br />
+	- use command 
+	conda remove --name nbgrader_env --all
 	- Go to your Anaconda3 folder (usually located on C drive alongside the Documents, Desktop, etc. folders. Or directly in C next the Program files folder) <br />
 	- Within Anaconda3 folder, go to `Anaconda3 -> envs` and delete the *nbgrader_env* folder and the *.conda_envs_dir_test* 
 	<br />
