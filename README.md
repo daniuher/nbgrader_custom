@@ -210,11 +210,13 @@ The autograding might take some time. It needs re-insert all the tests, run the 
 1. Launch Jupyter. (*launch_jupyter.bat*)
 2. Select Formgrader in the top menu.
 3. Select **Manual Grading** in the left vertical menu.
-4. Select the assignment, notebook and click the first submission.
+4. Select the assignment, then notebook and click the first submission.
 5. If we scroll-down to the sections, which were supposed to be filled by the students, we can see, that
 we can now provide a comment under the particular cell. 
-6. In the test cells, we can assign the points. They have been assigned automatically, howeve we can change them however we want. 
+6. In the test cells, we can assign the points in the blue top bar. They have been assigned automatically, however we can change them however we want. 
 7. Once done with grading the submission, move to the next one by clicking *next* in the top right corner. 
+
+For more information about manual grading and the assignments themselves, please read thorugh [Creating and grading assignments](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html) in the nbgrader official documentation.
 
 ### Upload grades to Moodle
 > After finishing our grading, we want to upload the grades to the course in Moodle. We will export a grades file, update the grades in it, and import it back to Moodle.
