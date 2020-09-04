@@ -220,18 +220,10 @@ we can now provide a comment under the particular cell.
 For more information about manual grading and the assignments themselves, please read thorugh [Creating and grading assignments](https://nbgrader.readthedocs.io/en/stable/user_guide/creating_and_grading_assignments.html) in the nbgrader official documentation.
 
 ### Upload grades to Moodle
-> After finishing our grading, we want to upload the grades to the course in Moodle. We will export a grades file, update the grades in it, and import it back to Moodle.
+> After finishing our grading, we want to upload the grades to the course in Moodle. We will generate a csv file with the grades and import it to Moodle.
 
-1. Go to the Moodle course page and change the language to English.
-2. In the right vertical menu, select **Course grading**.
-3. In the top horizontal menu, select **Export**.
-4. In the secondary horizontal menu, select **Plain text file**.
-5. Leave checked only the assignment, which has been currently autograded.
-6. Click **Download**.
-7. Locate the downloaded file and move it into the course root folder.
-8. In the course folder, double-click **update_grades_file.bat**.
-9. Copy/paste or write the names of the .csv grades file and hit Enter.
-10. The grades within the file have now been updated. 
+1. In the course folder, double-click the **update_grades_file.bat**.
+2. A **grades_{*assignmentname*}.csv** will get created contatining the grades.
 11. Go back to the Moodle course page, change language to English and go to **Course Grading**.
 12. In the top horizontal menu, select **Import**.
 13. Insert the grades .csv file, leave everything as is by default and hit **Upload grades**.
