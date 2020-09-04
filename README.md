@@ -2,6 +2,19 @@
 
 > **For the documentation about the tools themselves, the scripts and how to alter them, go to the *doc* folder and choose Python docu.**  
 
+### Final updates
+
+**Grades upload**
+It is no longer necessary to download the grades .csv file from Moodle. The grades are now generated automatically by double-clicking the **upload_grades.bat** file and the generated .csv file can be imported to Moodle, mapped by email address and the assignment column with grades to the grades items for corresponding assignment.
+
+**Moodle submission sort**
+An error regarding collecting the timestamps was fixed.
+
+**Send feedback to students**
+It has been and we are able to send the feedbacks to students by double-clicking the send_feedback_to_students.bat
+
+**Python documentation created**
+Within the docu folder, please find the documentation for the different Python tools
 
 
 The **nbgrader_toolbox** provides a couple fo Python scripts with some linked excutable *.bat* files,
