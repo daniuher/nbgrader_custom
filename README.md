@@ -181,7 +181,6 @@ they are simply listed as detected assignments.
 5. Archive the released files and upload them to Moodle.
 
 ### Sort Moodle submissions
-!! We are collecting only the *.ipynb* files.
 > After the deadline, let's collect the submissions as follows:
 
 1. Within the moodle course page, set the interface language to English in the top roll-down menu.
